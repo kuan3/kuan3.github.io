@@ -50,27 +50,27 @@
 		    </p>
 		   <h4>常见问题 </h4>
 			<p>
-				判断是否连接远程仓库？ <br />
+				<strong>判断是否连接远程仓库？</strong> <br />
 				git remote：判断并显示远程仓库 <br />
 				git remote show origin：显示远程仓库地址git 
 			</p>
 			<p>
-				推送到另一个github账号，origin已存在？ <br />
+				<strong>推送到另一个github账号，origin已存在？</strong> <br />
 				git remote rm origin:删除origin仓库名称 <br />
 				git remote add origin  远程地址：关联远程仓库(clone或者pull下来的仓库不用创建连接)<br />
 			</p>
 			<p>
-				出现报错分支上没有master？ <br />
+				<strong>出现报错分支上没有master？</strong> <br />
 				一种：协议不会 <br />
 				二中：项目中没有reademe（有时候没有也可以推送）
 			</p>
 			<p>
-				多个github账户之间的切换？ <br />
+				<strong>多个github账户之间的切换？</strong> <br />
 				https协议：  ● 安装了git gui，多个账户进行切换时候，需要删除github凭据（用户账户管理凭据）<br />
 				ssh协议需要重新设置秘钥
 			</p>
 			<p>
-				远程仓库是最新版本怎么推送？报错（  ● failed to push some refs to:远程与本地有冲突） <br />
+				<strong>远程仓库是最新版本怎么推送？报错（  ● failed to push some refs to:远程与本地有冲突）</strong> <br />
 				1、git pull --rebase origin master：下载并以远程代码为基础合并 <br />
 				2、git push -f origin master：以本地为基准强制推送（远程回退的时候） 
 			</p>
