@@ -18,7 +18,7 @@
 	<div class="container">
 		<h1>
 			<a href="index.html">返回</a>
-			<a href="git02.htmll">简单的git工作流程 ——></a>
+			<a href="git02.html">简单的git工作流程 ——></a>
 		</h1>
 		<h1>
 			git简介 
@@ -41,6 +41,7 @@
 			git add 文件名字/*/.：将文件追加到git管理中/全部添加/全部添加 <br />
 			git commit 文件名 -m“注释”：将文件提交到git本地仓库中 <br />
 			git commit -a -m"注释"：将所有文件提交到本地仓库 <br />
+			git commit --amend -m"注释"：作为最新的提交覆盖上一次commit记录 <br />
 			git status：查看git仓库状态 <br />
 			git diff：查看修改 <br />
 			git log：查看日志 <br /> 
@@ -109,7 +110,7 @@
 			git checkout 【分支名称】：切换到某个分支上 <br />
 			git merge 【分支名字】:将分支合并过来 <br />
 			git branch -d【分支名称】：将分支删除 <br />
-			git push -u origin --delete <branchName>：删除远程分支 <br />
+			git push -u origin --delete branchName：删除远程分支 <br />
 			git branch -m “old” “new”：重命名分支 <br />
 		</p>
 		<h3>
