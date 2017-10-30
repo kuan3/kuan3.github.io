@@ -11,22 +11,30 @@
       width: 50%;
       border: 1px solid #ccc;
       box-shadow: 10px 10px 5px #ccc;
-      padding: 50px;
+      padding: 50px 50px 200px 50px;
       margin: 50px auto;
       border-radius: 20px;
       box-sizing: border-box;
+      min-height: 600px;
+      position: relative;
     }
     .flower {
-      transform: scale(0.5) rotate(30deg);
+      transform: scale(0.5) rotate(-30deg);
       position: absolute;
-      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-left: 1em;
     }
   </style>
 </head>
 <body>
 <div id="container" class="container animated fadeInLeft">
-  <h1><a href="note/animate.html"></a></h1>
-  <h1><a href="note/git.html"></a></h1>
+  <h1 class="animated bounce">我的手册</h1>
 </div>
 </body>
 <script src="js/lib/flower.js"></script>
@@ -35,7 +43,7 @@
 <script>
   let con = document.getElementById('container');
   Object.values(notes).map((item, index) => {
-    let h = document.createElement('h1');
+    let h = document.createElement('h2');
     let a = document.createElement('a');
     a.innerHTML = '⭐ - ' + item;
     a.setAttribute('href', './note/' + Object.keys(notes)[index] + '.html');
