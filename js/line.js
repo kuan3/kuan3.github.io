@@ -19,7 +19,7 @@ resize();
 window.onresize = resize;
 
 function resize(){
-  canvas.width = document.documentElement.clientWidth;
+  canvas.width = window.innerWidth || document.documentElement.clientWidth;
   canvas.height = document.documentElement.clientHeight;
   //为了在底部留出一段距离
 }

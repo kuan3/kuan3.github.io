@@ -11,13 +11,12 @@ h1 {
     font-size: 30px;
 }
 h2 {
-    margin-bottom: 10px;
+    margin-top: 10px;
     padding-left: 1em;
 }
 .container {
     padding: 20px 50px;
     margin: 20px auto;
     width: 50%;
-    border: 1px solid #eee;
     min-height: 500px;
 }

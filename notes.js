@@ -1,5 +1,5 @@
 let notes = {
-  notebook: '项目笔记',
-  animate: 'animate.css效果展示',
+  notebook: '项目手册',
+  animate: 'animate.css',
   git: 'git手册',
 };

@@ -14,10 +14,12 @@
       padding: 50px;
       margin: 50px auto;
       border-radius: 20px;
+      box-sizing: border-box;
     }
     .flower {
-      transform: scale(0.5);
-      float: right;
+      transform: scale(0.5) rotate(30deg);
+      position: absolute;
+      left: 0;
     }
   </style>
 </head>
@@ -35,7 +37,7 @@
   Object.values(notes).map((item, index) => {
     let h = document.createElement('h1');
     let a = document.createElement('a');
-    a.innerHTML = item;
+    a.innerHTML = '⭐ - ' + item;
     a.setAttribute('href', './note/' + Object.keys(notes)[index] + '.html');
     con.appendChild(h);
     h.appendChild(a);
