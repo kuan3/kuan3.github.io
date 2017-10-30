@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/pc_reset.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../css/note.css">
+</head>
+<body>
+<div class="container animated fadeIn">
+  <h1>项目手册</h1>
+  <p>时间格式 <br>
+     moment().format('YYYY-MM-DDThh:mm:ss')</p>
+  <p>万象优图 <br>
+     &lt;img src={image + '?imageView2/0/w/100/h/100'} /&gt;</p>
+  <p>超出显示省略号： <br>
+     p{width: 300px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;} <br>
+     p{display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient:vertical;overflow: hidden;text-overflow: ellipsis;}</p>
+  <p>正则表达式 <br>
+     邮箱正则表达式  /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/ <br>
+     电话	/^1[34578]\d{9}$/ <br>
+     匹配中文	[\u4e00-\u9fa5]</p>
+  <p>js兼容 <br>
+     阻止事件冒泡兼容 evt.stopPropagation ? evt.stopPropagation() : evt.cancelBubble=true;
+     阻止默认行为兼容 evt.preventDefault ? evt.preventDefault() : evt.returnValue=false;</p>
+</div>
+</body>
+</html>
